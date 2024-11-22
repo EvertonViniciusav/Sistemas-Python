@@ -26,24 +26,24 @@ def main(page):
             alturaMetros = float(altura.value) / 100
             imc = pesoFloat / (alturaMetros ** 2)
 
-        if imc < 18.5:
-            texto.value = f"Seu IMC e {imc:.2f} - Abaixo do peso"
-            imagem.src = "src/baixo.png"
-        elif 18.5 <= imc < 24.9:
-            texto.value = f"Seu IMC e {imc:.2f} - Peso normal"
-            imagem.src = "src/normal.png"
-        elif 25 <= imc < 29.9:
-            texto.value = f"Seu IMC e {imc:.2f} - Sobrepeso"
-            imagem.src = "src/acima.png"
-        elif 30 <= imc < 34.9:
-            texto.value = f"Seu IMC e {imc:.2f} - Obesidade grau 1"
-            imagem.src = "src/I.png"
-        elif 35 <= imc < 39.9:
-            texto.value = f"Seu IMC e {imc:.2f} - Obesidade grau 2"
-            imagem.src = "src/II.png"
-        else:
-            texto.value = f"Seu IMC e {imc:.2f} - Obesidade grau 3"
-            imagem.src = "src/III.png"
+            if imc < 18.5:
+                texto.value = f"Seu IMC e {imc:.2f} - Abaixo do peso"
+                imagem.src = "src/baixo.png"
+            elif 18.5 <= imc < 24.9:
+                texto.value = f"Seu IMC e {imc:.2f} - Peso normal"
+                imagem.src = "src/normal.png"
+            elif 25 <= imc < 29.9:
+                texto.value = f"Seu IMC e {imc:.2f} - Sobrepeso"
+                imagem.src = "src/acima.png"
+            elif 30 <= imc < 34.9:
+                texto.value = f"Seu IMC e {imc:.2f} - Obesidade grau 1"
+                imagem.src = "src/I.png"
+            elif 35 <= imc < 39.9:
+                texto.value = f"Seu IMC e {imc:.2f} - Obesidade grau 2"
+                imagem.src = "src/II.png"
+            else:
+                texto.value = f"Seu IMC e {imc:.2f} - Obesidade grau 3"
+                imagem.src = "src/III.png"
 
         page.update()
 
